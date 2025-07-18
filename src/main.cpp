@@ -227,13 +227,13 @@ void mapNames(const fs::directory_entry& entry, std::vector<TwoStrings>& mapping
 
 int main(void)
 {
-    fs::path mappingsPath = R"(C:\Users\VisualGoose\Desktop\yarn-1.20.2\mappings)";
+    fs::path mappingsPath;
     std::cout << "Mappings path (for example <some path>/yarn-1.20.2/mappings\n" <<
         "Path: ";
     std::cin >> mappingsPath;
     std::cout << "Src code path (for example <project root path>/src/main/java/<package>\n" <<
         "Path: ";
-    fs::path projPath = R"(C:\Users\VisualGoose\IdeaProjects\WouldYouRather-Backup\src\main\java\com\eightsidedsquare\wyr)";
+    fs::path projPath;
     std::cin >> projPath;
 
     std::cout << "Enable verbose output? (will significantly reduce performance)\n" <<
